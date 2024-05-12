@@ -1,1 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pr2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="pr2.css" />
+    <link rel="hmtl" href="index.html" />
+    <link rel="stylesheet" href="pr2-header.css" />
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="quotes.css" />
+
+    
+    <script type="module" src="./main.js"></script>
+
+    <script type="module" src="./weather.js"></script>
+
+
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="left-con">
+          <div class="left-sec">
+            <img class="logo-img" onmouseover = "playSound()"src="css/pr2/logo.jpg" />
+            <div class="meow">meow!</div>
+          </div>
+        </div>
+        <div class="right-con">
+          <div class="right-sec">
+            <a href="#weather"   class="weather-link">Weather</a>
+            <a href="#quote"class="quotes-link">Quotes</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="group">
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/c-1.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/f-1.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/f3.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/b-2.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/time.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/music.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/venice.jpg" />
+        </div>
+      </div>
+      <div class="bg-1">
+        <div class="image-container">
+          <img class="pic" src="css/pr2/l-4.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="open-text">
+      <p class="title">Quothestic</p>
+    </div>
+    <nav class="empty-space"></nav>
+  <div class = "blur">
+    <div class="w-text">
+      <div  id="weather"class="w-div-text">TODAYS WEATHER</div>
+    </div>
+
+    <div class="weather">
+      <div class="container">
+        <div class="w-header-left">
+          <img
+            class="w-icon-main"
+            src="w-icons/sunnyo.png"
+            data-current-icon
+          />
+          <div class="header-current-temp">
+            <span data-current-temp>31</span>&deg;
+          </div>
+        </div>
+        <div class="w-header-right">
+          <div class="info-group">
+            <div class="label">HIGH</div>
+            <div><span data-current-high>32</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">FL HIGH</div>
+            <div><span data-current-fl-high>27</span>&deg;</div>
+          </div>
+
+          <div class="info-group">
+            <div class="label">WIND</div>
+            <div>
+              <span data-current-wind>9</span
+              ><span class="value-sub-info">mph</span>
+            </div>
+          </div>
+
+          <div class="info-group">
+            <div class="label">LOW</div>
+            <div><span data-current-low>19</span>&deg;</div>
+          </div>
+
+          <div class="info-group">
+            <div class="label">FL FLOW</div>
+            <div><span data-current-fl-low>12</span>&deg;</div>
+          </div>
+
+          <div class="info-group">
+            <div class="label">PRECIP</div>
+            <div>
+              <span data-current-precip>o.1</span
+              ><span class="value-sub-info">in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <section class = "day-section" data-day-section >
+		<div class="day-card">
+
+			<div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Monday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+      <div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+      <div class="day-card-day">Tuesday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+			<div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Wednesday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+			<div class = "w-img-conatainer">
+        <img src="/w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Thursday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+			<div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Friday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+			<div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Saturday</div>
+			<div class = "">32&deg;</div>
+		</div>
+		<div class="day-card">
+			<div class = "w-img-conatainer">
+        <img src="w-icons/rainy.png" class = "cw-icon">
+      </div>
+			<div class="day-card-day">Sunday</div>
+			<div class = "">32&deg;</div>
+		</div>
+  </section>
+   
+      
+  
+
+	  <template id ="day-card-template">
+      <div class="day-card">
+        <div class = "w-img-conatainer">
+          <img data-icon class = "cw-icon">
+        </div>
+        <div class="day-card-day" data-date></div>
+        <div ><span data-temp></span><span>&deg;</span></div>
+      </div>
+    </template>
+
+
+	 
+  </div>  
+  <nav id="quotes" class="empty-space"></nav>
+  <div >
+    <div class="container-B">
+    <img src="css/pr2/o1.png" class="img-1" >
+    </div>
+
+    <div class="quote-box">
+
+        <h2 >Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+      
+    </div>
+    
+    
+
+    
+    <div class="container-A">
+      <img src="css/pr2/o1.png" class="img-2">
+    </div>
+    <button class="new-quote" onclick="getquote(api_url)">
+      New Quote
+    </button>
+    <script>
+      function playSound() {
+        var audio = new Audio("css/pr2/meow.mp3");
+        audio.play();
+      }
+    </script>
+    <script>
+      const quote = document.getElementById("quote")
+      const author = document.getElementById("author")
+
+      const api_url = "https://api.quotable.io/random"
+      
+      async function getquote(url){
+        const response= await fetch(url);
+        var data = await response.json();
+        // console.log(data);
+        quote.innerHTML = data.content;
+        author.innerHTML = data.author;
+
+      }
+      getquote(api_url);
+    </script>
+    <footer>
+      <div class="footer">
+        <p>&copy; 2023 Rida Tanzeen. All rights reserved.</p>
+        <p><a href="https://example.com/" class="about-me-link">About Me</a></p>
+      </div>
+    </footer>
+    <nav class="empty-space"></nav>
+    <nav class="empty-space"></nav>
+
+    
+
+    
+  </div>
+ 
+
+
+
+	
+  </body>
+</html>
