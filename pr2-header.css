@@ -1,0 +1,138 @@
+.nw{
+	display: hidden;
+	border: none;
+}
+.header{
+	display: flex;
+	height:35px;
+	width: auto;
+	flex-direction: row;
+	justify-content: space-between;
+	
+
+}
+
+.right-sec{
+	color: white;
+	display: flex;
+	align-self: flex-end;
+	font-family: Nunito;
+	font-size: 20px;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 20px;
+
+
+}
+
+.right-con{
+	justify-content: center;
+	align-items: center;
+}
+
+.left-sec{
+	color: white;
+	width: 100px;
+	height:35px;
+	display: flex;
+	align-self:flex-start ;
+	flex: 1.2;
+}
+
+.logo-img{
+	width: 75px;
+	height: 75px;
+	transform: translate(-30%, -30%);
+	margin-left:20px;
+	cursor:pointer;
+}
+
+.meow{
+	height:20px;
+	position: absolute;
+	background: white;
+	padding: 3px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	border-radius: 14%;
+	font-family: Roboto,Arial;
+	top: 16px;
+	left: 80px;
+	opacity: 0;	
+	transition: opacity 0.15s;
+
+}
+.logo-img:hover + .meow{
+	opacity: 1;
+}
+
+
+.title{
+	display: flex;
+	color: rgba(222, 222, 222, 0.9);
+	font-size:20rem;
+	font-family: 'Style Script', cursive;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: open-animation 2s ease-in 1 forwards;
+	
+}
+
+.open-text{
+	animation: title-animation 1.5s ease-in-out infinite alternate;
+}
+
+.event-link{
+	position: relative;
+}
+.event-link::after{
+	content: '';
+	width: 10px;
+	height: 3px;
+	color: white;
+	position: absolute;
+	top: 1;
+
+}
+@keyframes title-animation{
+	from{
+		text-shadow: 0px 0px 20px rgb(220, 220, 220);
+	}
+
+	to{
+		text-shadow: 0px 0px 30px rgb(240, 240, 240);
+		text-shadow: 0px 0px 10px rgb(230, 230, 230);}
+	}
+
+@keyframes open-animation{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+
+
+}
+
+.right-sec a {
+	color: white; /* Sets the text color to white */
+	text-decoration: none; /* Removes the underline */
+	transition: color 0.3s ease-in; 
+	
+}
+
+.right-sec a:hover {
+	color: white; /* Changes the text color to white when hovered */
+	text-shadow: 0 0 5px white; /* Adds a white glow effect */
+  }
+
+
+
+ 

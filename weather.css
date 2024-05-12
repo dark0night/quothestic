@@ -1,0 +1,164 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.weather{
+    display: hidden;
+}
+.empty-space{
+    border-top: 150px solid transparent;
+  }
+.w-div-text{
+    font-family: 'Nunito' , 'Roboto';
+    font-size:30px;
+    color:white;
+    font-weight: 700;
+    font-stretch: expanded;
+    margin-left: 22px;
+}
+.w-icon-main{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    right: 80px;
+
+}
+.w-header{
+    display: flex;
+
+    align-items: center;
+}
+
+.header-current-temp{
+    color: white;
+    font-size: 50px;
+    font-family: "Nunito";
+    margin-right: 20px;
+
+}
+.info-group{
+    color: white;
+    font-size: auto;
+    align-items: center;
+    font-family: "Nunito";
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.w-header-left{
+    display: inline-flex;
+    width:auto;
+    align-items:center; 
+    justify-content: center;
+    margin: 0;
+    padding:.8rem;   
+    border-right: 10px solid white;
+}
+
+.w-header-right{
+    display: grid;
+    width: 50%;
+    justify-content:space-around;
+    align-items: center; 
+    gap:0.5rem;
+    grid-template-columns:repeat(3 , auto);
+    grid-template-rows:repeat(2 , auto);
+    
+}
+
+
+
+.cw-icon{
+   height: 90px;
+   width:90px;
+}
+
+.day-card{
+    font-family: "Nunito";
+    color: white;
+}
+
+.day-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 75px);
+    gap:4rem;
+    justify-content:center;
+    padding:1rem;
+}
+
+.day-card{
+    display: flex; 
+    width: 7rem;
+    flex-direction: column;
+    align-items: center;
+    border:4px solid white;
+    border-radius:0.75rem;
+    padding: 0.50rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.day-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* .card-content {
+  padding: 20px;
+} */
+
+/* Additional styles for the glowing effect */
+.day-card:hover::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  /* background-color: rgba(255, 255, 255, 0.771); */
+  border-radius: 10px;
+}
+.day-card-day{
+    font-size: 1.2rem;
+}
+
+.w-hour-section{
+    width:100%;
+    font-size: 1.2rem ;
+    text-align:center;
+    border-spacing: 0;
+
+}
+.hour-img{
+    width: 6rem;
+    height: 6rem;
+}
+.hour-row{
+    background-color: rgba(23, 23, 23 , 0.8);
+
+}
+
+.hour-row:nth-child(2n){
+    background-color: rgba(37, 37, 37,0.9);
+}
+
+.hour-row > td{
+    padding:0.25rem 0.5rem;
+}
+.blur {
+  overflow: hidden;
+  animation: blur-transition 1s ease-in-out;
+}
+
+@keyframes blur-transition {
+  from {
+    filter: blur(0);
+    
+  }
+  to {
+    filter: blur(14px);
+   
+  }
+}
+

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@500&family=Style+Script&display=swap');
+/* .body{
+    overflow: auto;
+} */
+
+.quote-box {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+    width: 700px;
+    border-radius:3rem;
+    padding: 20px;
+    position: relative;
+    left: 20%;
+
+    
+    text-align: center; 
+  }
+
+  
+.quote-box h2,
+.quote-box blockquote,
+.quote-box span{
+color: white;
+text-align: center; 
+
+}
+
+.quote-box h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Style Script';
+    font-weight: 200;
+
+
+}
+
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background:white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%);
+}
+
+.quote-box blockquote{
+    font-size: 1.5rem;
+    font-family: 'Nunito';
+
+    min-height: 4rem;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content :'"';
+}
+
+.quote-box span{
+    font-family: 'Nunito';
+
+    display: block;
+    float: right;
+    top: -10px;
+    position: relative;
+
+}
+
+.quote-box span::before{
+    content: '';
+    width:1.2rem;
+    height: 2px;
+    left: -1.4rem;
+    bottom: 8px;
+
+    background:white;
+    position:absolute;
+    }
+
+.new-quote{
+   
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-quote{
+    background: rgb(0, 0, 0);
+    color:white;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-family: 'Nunito';
+    border:2px solid white;
+    display:inline-flex;
+    width: 150px;
+    height: 50px;
+    left: 33rem;
+    top: 18px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px white;
+}
+.new-quote:hover {
+    box-shadow: 0 0 5px white;
+  }
+.new-quote:active {
+    box-shadow: 0 0 1px white;
+  }
+  
+
+.container-B {
+width: 400px;
+height: 200px;
+/* overflow: hidden; */
+position: relative;
+top: -20px;
+left: 8rem;
+}
+
+.container-B img {
+width: 90%;
+height: auto;
+object-fit: cover;
+position: relative;
+top: -14px;
+left: 18rem;
+}
+
+.container-A{
+    width: 400px;
+    height: 10px;
+    /* overflow: hidden; */
+    position: relative;
+    top: -40px;
+    left: 8.3rem;
+}
+
+.img-2 {
+    width: 90%;
+height: auto;
+object-fit: cover;
+position: relative;
+top: 40px;
+left: 18rem;
+   
+  }
